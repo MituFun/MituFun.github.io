@@ -5,15 +5,15 @@
     <link rel="stylesheet" href="js/bootstrap.min.css">
     <style>
         body {
-            background: url('https://cdn.luogu.com.cn/upload/image_hosting/1wmcmflg.png') no-repeat center center fixed;
-            background-size: cover;
+            /*background: url('https://cdn.luogu.com.cn/upload/image_hosting/1wmcmflg.png') no-repeat center center fixed;*/
+            background-color: #CCC;
             color: #1D1D1D;
         }
 
         .container {
             animation: fadeInAnimation 1s;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.4);
             padding: 20px;
             border-radius: 10px;
         }
@@ -84,8 +84,15 @@
     <script src="js/chart.js"></script>
 </head>
 <body>
+    <style>
+        @media only screen and (max-width: 767px) {
+            #sidebar_search_box input[type=text] {
+                width: calc(100% - 24px)
+            }
+        }
+    </style>
     <div class="container mt-3">
-        <h1 class="text-center">水位监测</h1>
+        <h1 class="text-left">水位监测</h1>
 
         <div class="input-group mb-3" style="animation: slideInAnimation 1s;">
             <input type="number" id="waterLevelInput" class="form-control" placeholder="请输入水位">
@@ -120,7 +127,7 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             updateChart();
         });
 
@@ -220,7 +227,7 @@
                         label: '水位',
                         data: data,
                         fill: false,
-                        borderColor: 'rgb(75, 192, 192)',
+                        borderColor: 'rgb(29, 29, 29)',
                         tension: 0.1
                     }]
                 },
@@ -228,41 +235,7 @@
         }
 
     </script>
-
-    <style>
-        @keyframes slideInAnimation {
-            from {
-                transform: translateY(-20px);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDownAnimation {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUpAnimation {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <script src="https://blog-static.cnblogs.com/files/zouwangblog/mouse-click.js"></script>
+    <script type="text/javascript" color="47,135,193" opacity='0.5' zIndex="-2" count="199" src="http://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 </body>
 </html>
