@@ -10,7 +10,7 @@ draft: false
 
 ## 前言
 
-（以下为官方 README 中文翻译）
+（以下为官方 README 中文翻译）[Thanos github 仓库地址](https://github.com/aternosorg/thanos)
 
 Thanos是一个PHP库，可以自动检测并删除Minecraft世界中未使用的区块。这可以将世界的文件大小减少50%以上。
 
