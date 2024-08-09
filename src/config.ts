@@ -43,11 +43,6 @@ export const navBarConfig: NavBarConfig = {
         url: 'https://yuxincraft.mitufun.top',
         external: true,
     },
-    {
-        name: 'Admin',
-        url: 'https://admin.mitufun.top',
-        external: true,
-    },
     //{
     //  name: 'GitHub',
     //  url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
